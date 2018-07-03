@@ -33,11 +33,12 @@ export default {
       return { ...state, current: state.current - 1 };
     },
     loginStatus(state, { res }) {
-      
-      return { ...state, 
-        isLogined: !state.isLogined, 
+      return {
+        ...state,
+        isLogined: !state.isLogined,
         current: Object.keys(res).length,
-        message:res.message }
+        message: res.message
+      }
     }
   },
 

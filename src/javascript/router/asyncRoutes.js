@@ -1,6 +1,6 @@
 const asyncRoutes =  [
     {
-        path: '/',
+        path: '/home',
         exact: true,
         models: () => [
             import('../pages/Home/model')
