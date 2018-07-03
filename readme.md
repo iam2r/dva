@@ -43,11 +43,14 @@ const CountApp = ({ home, dispatch }) => {
     height:50px
 }
 
-你在html中如果 写<div className="normal"> </div> 就不行了
-只能写成<div className="sjdklfjlkejworsoj"> </div>
+你在html中如果 
+    Tip：（代表<  )代表> 写成<>会被编译成html暂时用（）代替
+
+写（div className="normal"） （/div） 就不行了
+只能写成（div className="sjdklfjlkejworsoj"） （/div）
 但sjdklfjlkejworsoj是自动生成的  你在写代码的时候未知。
-所以需要写成<div className={style.normal}> </div>
-最终就会编译成<div className="sjdklfjlkejworsoj"> </div>
+所以需要写成（div className={style.normal}） （/div）
+最终就会编译成（div className="sjdklfjlkejworsoj"） （/div）
 保证样式生效
 
 那么问题来了
