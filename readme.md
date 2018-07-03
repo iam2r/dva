@@ -77,7 +77,7 @@ html中的默认class还是正常的。  第三方ui库自然会失效。
             modules: true
           }
         }, 'postcss-loader', 'sass-loader'],
-      },
+    }
 
 有道理 不错  这样第三方ui库的样式不会走css-loader自然不会被模块化
 
